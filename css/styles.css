@@ -29,6 +29,21 @@ body {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,8 +59,6 @@ body {
 
 .header-container {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
   align-items: center;
 }
 .page-header {
@@ -70,6 +83,7 @@ body {
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .site-nav,
@@ -105,6 +119,11 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -117,18 +136,14 @@ body {
   margin-left: auto;
 }
 .navigation-link {
-  display: block;
   margin-right: 50px;
 }
 
 /*hero*/
 
-.hero-container {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.hero {
   text-align: center;
   background: var(--bg-color);
 }
@@ -170,15 +185,10 @@ body {
 }
 
 /*advantages*/
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+
+.advantage-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantage-list-title {
@@ -203,14 +213,14 @@ h6 {
   display: flex;
 }
 
+.advantage-list-wrap {
+  width: 270px;
+}
+
 .advantage-list-wrap:not(:last-child) {
   margin-right: 30px;
 }
 
-.advantage-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 /*work*/
 .work,
 .team {
@@ -233,8 +243,8 @@ h6 {
   margin-right: 30px;
 }
 
-.work-container {
-  margin-bottom: 94px;
+.work-section {
+  padding-bottom: 94px;
 }
 /*team*/
 .team-section {
@@ -263,6 +273,7 @@ h6 {
 }
 
 .team-list-wrap {
+  width: 270px;
   background: var(--white-color);
   border-radius: 0px 0px 4px 4px;
 }
@@ -283,13 +294,11 @@ h6 {
 
 /*footer*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--bg-color);
 }
 
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .address,
 .address-list a {
   font-style: normal;
@@ -332,12 +341,14 @@ h6 {
 
 /*portfolio*/
 
-.work-examples-container {
+.work-examples-section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
 .work-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   font-family: inherit;
@@ -361,7 +372,7 @@ h6 {
 }
 
 .work-card-element {
-  flex-basis: calc(100% / 3-30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -373,9 +384,7 @@ h6 {
   margin-top: -30px;
 }
 .work-card-item {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
